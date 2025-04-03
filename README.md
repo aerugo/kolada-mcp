@@ -1,6 +1,6 @@
 # Kolada MCP Server
 
-[![MCP badge](https://modelcontextprotocol.io/badge/kolada-mcp)](https://modelcontextprotocol.io)
+![https://modelcontextprotocol.io)](https://badge.mcpx.dev?type=server 'MCP Server')
 
 > **Note:** This project is an independent, third-party implementation and is not endorsed by or affiliated with RKA (Council for the Promotion of Municipal Analysis).
 
