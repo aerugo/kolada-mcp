@@ -2,7 +2,9 @@
 
 [![https://modelcontextprotocol.io](https://badge.mcpx.dev?type=server 'MCP Server')](https://modelcontextprotocol.io)
 
-https://ancestral-lens.fra1.cdn.digitaloceanspaces.com/koladamcp.mp4
+<video controls>
+  <source src="[movie.mp4](https://ancestral-lens.fra1.cdn.digitaloceanspaces.com/koladamcp.mp4)" type="video/mp4">
+</video>
 
 Question: Where has preschool quality increased the most in Sweden over the past five years? 
 
