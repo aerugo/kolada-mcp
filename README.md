@@ -2,7 +2,7 @@
 
 [![https://modelcontextprotocol.io](https://badge.mcpx.dev?type=server 'MCP Server')](https://modelcontextprotocol.io)
 
-![](https://ancestral-lens.fra1.cdn.digitaloceanspaces.com/koladamcp.mp4)
+![https://ancestral-lens.fra1.cdn.digitaloceanspaces.com/koladamcp.mp4]()
 
 Question: Where has preschool quality increased the most in Sweden over the past five years? 
 
