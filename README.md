@@ -2,11 +2,12 @@
 
 [![https://modelcontextprotocol.io](https://badge.mcpx.dev?type=server 'MCP Server')](https://modelcontextprotocol.io)
 
-<video controls>
-  <source src="[movie.mp4](https://ancestral-lens.fra1.cdn.digitaloceanspaces.com/koladamcp.mp4)" type="video/mp4">
-</video>
 
-Question: Where has preschool quality increased the most in Sweden over the past five years? 
+
+_Question: Where has preschool quality increased the most in Sweden over the past five years? 
+_
+
+https://github.com/user-attachments/assets/b44317aa-4280-4be4-b64a-33b9feacc134
 
 [Final result after 10 minutes of analysis of Kolada data](https://claude.site/artifacts/17c19c84-c2c7-4e6a-95cf-16a63913e534).
 
