@@ -2,7 +2,7 @@
 
 [![https://modelcontextprotocol.io](https://badge.mcpx.dev?type=server 'MCP Server')](https://modelcontextprotocol.io)
 
-https://screen.studio/share/fifxxaiU
+![https://screen-studio-shareable-links.67aa83ffa7fb557cd114a7156fca4e73.r2.cloudflarestorage.com/fifxxaiU-video.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=363e5c20253db1195c87384f6dfb4c99%2F20250404%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250404T003443Z&X-Amz-Expires=7200&X-Amz-Signature=17f2fe2d3380f5a7f3ae16fa55ee855434c5681f34d4a8265506f3e76285c86c&X-Amz-SignedHeaders=host&x-id=GetObject]()
 
 > **Note:** This project is an independent, third-party implementation and is not endorsed by or affiliated with RKA (Council for the Promotion of Municipal Analysis).
 
