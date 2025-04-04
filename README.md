@@ -2,7 +2,9 @@
 
 [![https://modelcontextprotocol.io](https://badge.mcpx.dev?type=server 'MCP Server')](https://modelcontextprotocol.io)
 
-![](https://screen-studio-shareable-links.67aa83ffa7fb557cd114a7156fca4e73.r2.cloudflarestorage.com/fifxxaiU-video.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=363e5c20253db1195c87384f6dfb4c99%2F20250404%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250404T003443Z&X-Amz-Expires=7200&X-Amz-Signature=17f2fe2d3380f5a7f3ae16fa55ee855434c5681f34d4a8265506f3e76285c86c&X-Amz-SignedHeaders=host&x-id=GetObject)
+![]([https://screen-studio-shareable-links.67aa83ffa7fb557cd114a7156fca4e73.r2.cloudflarestorage.com/fifxxaiU-video.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=363e5c20253db1195c87384f6dfb4c99%2F20250404%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250404T003443Z&X-Amz-Expires=7200&X-Amz-Signature=17f2fe2d3380f5a7f3ae16fa55ee855434c5681f34d4a8265506f3e76285c86c&X-Amz-SignedHeaders=host&x-id=GetObject](https://ancestral-lens.fra1.cdn.digitaloceanspaces.com/koladamcp.mp4))
+Question: Where has preschool quality increased the most in Sweden over the past five years? 
+[Final result after 10 minutes of analysis of Kolada data](https://claude.site/artifacts/17c19c84-c2c7-4e6a-95cf-16a63913e534).
 
 > **Note:** This project is an independent, third-party implementation and is not endorsed by or affiliated with RKA (Council for the Promotion of Municipal Analysis).
 
