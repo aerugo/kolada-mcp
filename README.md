@@ -4,8 +4,7 @@
 
 
 
-_Question: Where has preschool quality increased the most in Sweden over the past five years? 
-_
+_Question: Where has preschool quality increased the most in Sweden over the past five years?_
 
 https://github.com/user-attachments/assets/b44317aa-4280-4be4-b64a-33b9feacc134
 
