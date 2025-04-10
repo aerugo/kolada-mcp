@@ -81,7 +81,7 @@ Using uv to install the Kolada MCP requirements is highly recommended. This ensu
 Run the Kolada MCP server locally in development mode with detailed debugging:
 
 ```bash
-uv run mcp dev kolada-mcp.py
+uv run mcp dev server.py
 ```
 
 Then open the [MCP Inspector](https://github.com/modelcontextprotocol/inspector) at `http://localhost:5173` in your browser. Use the inspector interface to:
