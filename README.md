@@ -2,6 +2,14 @@
 
 [![https://modelcontextprotocol.io](https://badge.mcpx.dev?type=server 'MCP Server')](https://modelcontextprotocol.io)
 
+
+
+_Question: Where has preschool quality increased the most in Sweden over the past five years?_
+
+https://github.com/user-attachments/assets/b44317aa-4280-4be4-b64a-33b9feacc134
+
+[Final result after 10 minutes of analysis of Kolada data](https://claude.site/artifacts/17c19c84-c2c7-4e6a-95cf-16a63913e534).
+
 > **Note:** This project is an independent, third-party implementation and is not endorsed by or affiliated with RKA (Council for the Promotion of Municipal Analysis).
 
 The **Kolada MCP Server** enables seamless integration between Large Language Models (LLMs) and [Kolada](https://www.kolada.se/), Sweden’s comprehensive municipal and regional statistical database. It provides structured access to thousands of Key Performance Indicators (KPIs), facilitating rich, data-driven analysis, comparisons, and explorations of public sector statistics.
