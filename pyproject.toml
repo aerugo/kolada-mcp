@@ -1,7 +1,7 @@
 [project]
 name = "kolada-mcp"
 version = "0.1.0"
-description = "Add your description here"
+description = "MCP server for Kolada API"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
@@ -9,9 +9,13 @@ dependencies = [
     "mcp[cli]>=1.6.0",
     "numpy>=2.2.4",
     "polars>=1.26.0",
-    "py2app>=0.28.8",
     "sentence-transformers>=4.0.1",
-    "setuptools>=78.1.0",
     "statistics>=1.0.3.5",
-    "wheel>=0.45.1",
 ]
+
+[[project.authors]]
+name = "Hugi Aegisberg"
+email = "hugi.aegisberg@pm.me"
+
+[project.scripts]
+kolada-mcp = "kolada_mcp:main"
