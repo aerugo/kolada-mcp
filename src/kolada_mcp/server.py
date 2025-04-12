@@ -1,6 +1,5 @@
 import sys
 import traceback
-import asyncio
 from mcp.server.fastmcp import FastMCP
 
 from lifespan.context import app_lifespan
@@ -35,7 +34,7 @@ mcp.tool()(filter_municipalities_by_kpi)  # type: ignore[Context]
 # Register the prompt
 mcp.prompt()(kolada_entry_point)
 
-async def main():
+def main():
     print("[Kolada MCP Main] Script starting...", file=sys.stderr)
     try:
         print(
@@ -52,4 +51,4 @@ async def main():
         print("[Kolada MCP Main] Script exiting.", file=sys.stderr)
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    main()
