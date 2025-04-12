@@ -3,17 +3,17 @@ from typing import Any
 
 from mcp.server.fastmcp.server import Context
 
-from config import BASE_URL
-from models.types import KoladaKpi, KoladaLifespanContext, KoladaMunicipality
-from services.api import fetch_data_from_kolada
-from services.data_processing import (
+from kolada_mcp.config import BASE_URL
+from kolada_mcp.models.types import KoladaKpi, KoladaLifespanContext, KoladaMunicipality
+from kolada_mcp.services.api import fetch_data_from_kolada
+from kolada_mcp.services.data_processing import (
     build_flat_list_of_municipalities_with_delta,
     fetch_and_group_data_by_municipality,
     parse_years_param,
     process_kpi_data,  # type: ignore[Context]
 )
-from tools.metadata_tools import get_kpi_metadata  # type: ignore[Context]
-from utils.context import safe_get_lifespan_context  # type: ignore[Context]
+from kolada_mcp.tools.metadata_tools import get_kpi_metadata  # type: ignore[Context]
+from kolada_mcp.utils.context import safe_get_lifespan_context  # type: ignore[Context]
 
 
 async def fetch_kolada_data(

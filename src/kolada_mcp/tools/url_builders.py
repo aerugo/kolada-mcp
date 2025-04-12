@@ -1,5 +1,3 @@
-from typing import Any
-
 def build_kolada_url_for_kpi(
     base_url: str,
     kpi_id: str,

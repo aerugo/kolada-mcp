@@ -2,15 +2,15 @@ import sys
 import traceback
 from mcp.server.fastmcp import FastMCP
 
-from lifespan.context import app_lifespan
-from prompts.entry_prompt import kolada_entry_point
-from tools.comparison_tools import compare_kpis  # type: ignore[Context]
-from tools.data_tools import (
+from kolada_mcp.lifespan.context import app_lifespan
+from kolada_mcp.prompts.entry_prompt import kolada_entry_point
+from kolada_mcp.tools.comparison_tools import compare_kpis  # type: ignore[Context]
+from kolada_mcp.tools.data_tools import (
     analyze_kpi_across_municipalities,  # type: ignore[Context]
     fetch_kolada_data,  # type: ignore[Context]
 )
-from tools.municipality_tools import list_municipalities, filter_municipalities_by_kpi  # type: ignore[Context]
-from tools.metadata_tools import (
+from kolada_mcp.tools.municipality_tools import list_municipalities, filter_municipalities_by_kpi  # type: ignore[Context]
+from kolada_mcp.tools.metadata_tools import (
     get_kpi_metadata,  # type: ignore[Context]
     get_kpis_by_operating_area,  # type: ignore[Context]
     list_operating_areas,  # type: ignore[Context]

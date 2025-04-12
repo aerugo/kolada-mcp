@@ -2,9 +2,9 @@ from typing import Any
 
 from mcp.server.fastmcp.server import Context
 
-from models.types import KoladaLifespanContext, KoladaMunicipality
-from tools.data_tools import fetch_kolada_data  # type: ignore[Context]
-from utils.context import safe_get_lifespan_context  # type: ignore[Context]
+from kolada_mcp.models.types import KoladaLifespanContext, KoladaMunicipality
+from kolada_mcp.tools.data_tools import fetch_kolada_data  # type: ignore[Context]
+from kolada_mcp.utils.context import safe_get_lifespan_context  # type: ignore[Context]
 
 
 async def list_municipalities(

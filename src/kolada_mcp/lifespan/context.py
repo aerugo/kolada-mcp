@@ -8,11 +8,11 @@ import httpx
 from mcp.server.fastmcp import FastMCP
 from sentence_transformers import SentenceTransformer
 
-from config import BASE_URL, KPI_PER_PAGE
-from models.types import KoladaKpi, KoladaLifespanContext, KoladaMunicipality
-from services.api import fetch_data_from_kolada
-from services.data_processing import get_operating_areas_summary
-from services.embeddings import load_or_create_embeddings
+from kolada_mcp.config import BASE_URL, KPI_PER_PAGE
+from kolada_mcp.models.types import KoladaKpi, KoladaLifespanContext, KoladaMunicipality
+from kolada_mcp.services.api import fetch_data_from_kolada
+from kolada_mcp.services.data_processing import get_operating_areas_summary
+from kolada_mcp.services.embeddings import load_or_create_embeddings
 
 
 @asynccontextmanager

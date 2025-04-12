@@ -6,8 +6,8 @@ import numpy as np
 import numpy.typing as npt
 from sentence_transformers import SentenceTransformer
 
-from config import EMBEDDINGS_CACHE_FILE
-from models.types import KoladaKpi
+from kolada_mcp.config import EMBEDDINGS_CACHE_FILE
+from kolada_mcp.models.types import KoladaKpi
 
 
 async def load_or_create_embeddings(

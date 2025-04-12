@@ -3,8 +3,8 @@ import sys
 import numpy as np
 from mcp.server.fastmcp.server import Context
 
-from models.types import KoladaKpi, KoladaLifespanContext
-from utils.context import safe_get_lifespan_context  # type: ignore[Context]
+from kolada_mcp.models.types import KoladaKpi, KoladaLifespanContext
+from kolada_mcp.utils.context import safe_get_lifespan_context  # type: ignore[Context]
 
 
 async def list_operating_areas(ctx: Context) -> list[dict[str, str | int]]:  # type: ignore[Context]

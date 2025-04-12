@@ -3,7 +3,7 @@ from typing import cast
 
 from mcp.server.fastmcp.server import Context
 
-from models.types import KoladaLifespanContext
+from kolada_mcp.models.types import KoladaLifespanContext
 
 
 def safe_get_lifespan_context(

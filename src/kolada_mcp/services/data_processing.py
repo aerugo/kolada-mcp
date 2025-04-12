@@ -3,7 +3,7 @@ from typing import Any
 
 import polars as pl
 
-from models.types import KoladaKpi, KoladaMunicipality
+from kolada_mcp.models.types import KoladaKpi, KoladaMunicipality
 from utils.statistics import (
     calculate_summary_stats,
     rank_and_slice_municipalities,
@@ -125,7 +125,7 @@ def build_flat_list_of_municipalities(
     Returns a flat list of municipality results without any ranking.
     Each entry includes municipality_id, municipality_name, and all available year values.
     """
-    flat_list = []
+    flat_list: list[dict[str, Any]] = []
     for m_id, year_vals in municipality_data.items():
         entry = {
             "municipality_id": m_id,
