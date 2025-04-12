@@ -12,10 +12,14 @@ dependencies = [
     "sentence-transformers>=4.0.1",
     "statistics>=1.0.3.5",
 ]
+authors = [
+    { name = "Hugi Aegisberg", email = "hugi.aegisberg@pm.me" }
+]
+license = "Apache-2.0"
 
-[[project.authors]]
-name = "Hugi Aegisberg"
-email = "hugi.aegisberg@pm.me"
+[project.urls]
+"Homepage" = "https://github.com/aerugo/kolada-mcp"
+"Bug Tracker" = "https://github.com/aerugo/kolada-mcp/issues"
 
 [project.scripts]
 kolada-mcp = "kolada_mcp:main"
