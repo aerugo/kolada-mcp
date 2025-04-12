@@ -23,32 +23,31 @@ mcp: FastMCP = FastMCP("KoladaServer", lifespan=app_lifespan)
 # Register all tool functions
 mcp.tool()(list_operating_areas)  # type: ignore[Context]
 mcp.tool()(get_kpis_by_operating_area)  # type: ignore[Context]
-mcp.tool()(get_kpi_metadata)  # type: ignore[Context]
-mcp.tool()(search_kpis)  # type: ignore[Context]
-mcp.tool()(fetch_kolada_data)  # type: ignore[Context]
+mcp.tool()(get_kpi_metadata)      # type: ignore[Context]
+mcp.tool()(search_kpis)           # type: ignore[Context]
+mcp.tool()(fetch_kolada_data)     # type: ignore[Context]
 mcp.tool()(analyze_kpi_across_municipalities)  # type: ignore[Context]
-mcp.tool()(compare_kpis)  # type: ignore[Context]
-mcp.tool()(list_municipalities)  # type: ignore[Context]
+mcp.tool()(compare_kpis)          # type: ignore[Context]
+mcp.tool()(list_municipalities)   # type: ignore[Context]
 mcp.tool()(filter_municipalities_by_kpi)  # type: ignore[Context]
 
 # Register the prompt
 mcp.prompt()(kolada_entry_point)
 
 def main():
-    print("[Kolada MCP Main] Script starting...", file=sys.stderr)
+    """
+    Runs the Kolada MCP server on stdio.
+    This call is synchronous—no 'await' needed.
+    """
+    print("[Kolada MCP] Starting server on stdio...", file=sys.stderr)
     try:
-        print(
-            "[Kolada MCP Main] Calling mcp.run(transport='stdio')...", file=sys.stderr
-        )
-        mcp.run(transport="stdio")
-        print("[Kolada MCP Main] mcp.run() finished unexpectedly.", file=sys.stderr)
+        mcp.run("stdio")
+        print("[Kolada MCP] Finished cleanly.", file=sys.stderr)
     except Exception as e:
-        print(
-            f"[Kolada MCP Main] EXCEPTION caught around mcp.run(): {e}", file=sys.stderr
-        )
+        print(f"[Kolada MCP] EXCEPTION: {e}", file=sys.stderr)
         traceback.print_exc(file=sys.stderr)
     finally:
-        print("[Kolada MCP Main] Script exiting.", file=sys.stderr)
+        print("[Kolada MCP] Exiting.", file=sys.stderr)
 
 if __name__ == "__main__":
     main()
