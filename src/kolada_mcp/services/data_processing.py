@@ -4,7 +4,7 @@ from typing import Any
 import polars as pl
 
 from kolada_mcp.models.types import KoladaKpi, KoladaMunicipality
-from utils.statistics import (
+from kolada_mcp.utils.statistics import (
     calculate_summary_stats,
     rank_and_slice_municipalities,
 )
