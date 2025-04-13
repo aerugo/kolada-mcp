@@ -17,9 +17,16 @@ authors = [
 ]
 license = "Apache-2.0"
 
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.package-data]
+"kolada_mcp" = ["*.npz"]
+
 [project.urls]
 "Homepage" = "https://github.com/aerugo/kolada-mcp"
 "Bug Tracker" = "https://github.com/aerugo/kolada-mcp/issues"
 
 [project.scripts]
 kolada-mcp = "kolada_mcp:main"
+
