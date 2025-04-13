@@ -45,6 +45,11 @@ async def load_or_create_embeddings(
     print(f"[Kolada MCP] Current working directory: {os.getcwd()}", file=sys.stderr)
     # console log cache file path
     print(f"[Kolada MCP] Cache file path: {EMBEDDINGS_CACHE_FILE}", file=sys.stderr)
+    # list all files in the current directory
+    print(
+        f"[Kolada MCP] Files in current directory: {os.listdir(os.getcwd())}",
+        file=sys.stderr,
+    )
     # Check if the cache file exists
     # and if it is a valid .npz file
     if os.path.exists(EMBEDDINGS_CACHE_FILE):
