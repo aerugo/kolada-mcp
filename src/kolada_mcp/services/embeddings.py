@@ -4,10 +4,9 @@ from typing import Any
 
 import numpy as np
 import numpy.typing as npt
-from sentence_transformers import SentenceTransformer
-
 from kolada_mcp.config import EMBEDDINGS_CACHE_FILE
 from kolada_mcp.models.types import KoladaKpi
+from sentence_transformers import SentenceTransformer
 
 
 async def load_or_create_embeddings(
@@ -41,6 +40,31 @@ async def load_or_create_embeddings(
     # Attempt to load existing cache
     existing_embeddings: npt.NDArray[np.float32] | None = None
     loaded_ids: list[str] = []
+
+    # console log current path
+    print(f"[Kolada MCP] Current working directory: {os.getcwd()}", file=sys.stderr)
+    # console log cache file path
+    print(f"[Kolada MCP] Cache file path: {EMBEDDINGS_CACHE_FILE}", file=sys.stderr)
+    # Check if the cache file exists
+    # and if it is a valid .npz file
+    if os.path.exists(EMBEDDINGS_CACHE_FILE):
+        print(
+            f"[Kolada MCP] Found embeddings cache at {EMBEDDINGS_CACHE_FILE}",
+            file=sys.stderr,
+        )
+        if not EMBEDDINGS_CACHE_FILE.endswith(".npz"):
+            print(
+                f"[Kolada MCP] WARNING: Cache file is not a .npz file: {EMBEDDINGS_CACHE_FILE}",
+                file=sys.stderr,
+            )
+            return np.array([], dtype=np.float32), []
+    if not os.path.isfile(EMBEDDINGS_CACHE_FILE):
+        print(
+            f"[Kolada MCP] WARNING: Cache file does not exist: {EMBEDDINGS_CACHE_FILE}",
+            file=sys.stderr,
+        )
+        return np.array([], dtype=np.float32), []
+
     if os.path.isfile(EMBEDDINGS_CACHE_FILE):
         print(
             f"[Kolada MCP] Found embeddings cache at {EMBEDDINGS_CACHE_FILE}",
@@ -114,7 +138,7 @@ async def load_or_create_embeddings(
             f"[Kolada MCP] Generating embeddings for {len(missing_ids)} new KPIs...",
             file=sys.stderr,
         )
-        new_embeds = model.encode( # type: ignore[encde]
+        new_embeds = model.encode(  # type: ignore[encde]
             missing_titles,
             show_progress_bar=True,
             normalize_embeddings=True,
@@ -122,8 +146,8 @@ async def load_or_create_embeddings(
 
         # If we had no existing dimension, set up final_embeddings now
         if final_embeddings is None:
-            embedding_dim = new_embeds.shape[1] # type: ignore[embed]
-            final_embeddings = np.zeros((len(kpi_ids_list), embedding_dim), dtype=np.float32) # type: ignore[embed]
+            embedding_dim = new_embeds.shape[1]  # type: ignore[embed]
+            final_embeddings = np.zeros((len(kpi_ids_list), embedding_dim), dtype=np.float32)  # type: ignore[embed]
 
         # Place the newly generated embeddings into final_embeddings
         for j, idx in enumerate(missing_indices):
