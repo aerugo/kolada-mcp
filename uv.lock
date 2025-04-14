@@ -213,7 +213,7 @@ wheels = [
 
 [[package]]
 name = "kolada-mcp"
-version = "0.1.2"
+version = "0.1.32"
 source = { virtual = "." }
 dependencies = [
     { name = "httpx" },
