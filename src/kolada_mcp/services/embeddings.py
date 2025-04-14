@@ -53,6 +53,9 @@ async def load_or_create_embeddings(
         file=sys.stderr,
     )
     for path in possible_cache_paths:
+        print(f"    - {path}", file=sys.stderr)
+        # print the list of files in the directory
+        print(f"    - Files: {os.listdir(path)}", file=sys.stderr)
         test_path = os.path.join(path, "kpi_embeddings.npz")
         if os.path.isfile(test_path):
             selected_cache_file = test_path
