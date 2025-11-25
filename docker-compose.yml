@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  kolada-mcp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: kolada-mcp-server
+    ports:
+      - "8001:8001"
+    environment:
+      - MCP_TRANSPORT=http
+      - PORT=8001
+      - LOG_LEVEL=INFO
+    volumes:
+      # Persist embeddings cache
+      - embeddings_cache:/app/src/kolada_mcp
+    healthcheck:
+      test: ["CMD", "python", "-c", "import httpx; httpx.get('http://localhost:8001/health/live')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    restart: unless-stopped
+
+  # Development service with hot reload
+  kolada-mcp-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: base
+    container_name: kolada-mcp-dev
+    ports:
+      - "8002:8001"
+    environment:
+      - MCP_TRANSPORT=http
+      - PORT=8001
+      - LOG_LEVEL=DEBUG
+      - PYTHONPATH=/app/src
+    volumes:
+      - ./src:/app/src
+    command: ["python", "-m", "kolada_mcp"]
+    profiles:
+      - dev
+
+volumes:
+  embeddings_cache:
