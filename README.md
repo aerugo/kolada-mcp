@@ -1,5 +1,7 @@
 # Kolada MCP Server
 
+[![MCP Toplist](https://mcptoplist.com/badge/glama%2Faerugo%2Fkolada-mcp.svg)](https://mcptoplist.com/server/glama%2Faerugo%2Fkolada-mcp)
+
 A clean, standalone MCP (Model Context Protocol) server for Sweden's Kolada municipal statistics API.
 
 ## Overview
